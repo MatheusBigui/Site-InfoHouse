@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+:root {
+    --cor0: #3B3C40;
+    --cor1: #ffffff;
+    --cor2: #F22248;
+    --cor3: #EC1F25;
+    --cor4: #000000;
+}
+
+body {
+    background-color: var(--cor0);
+    color: var(--cor1);
+}
+
+main {
+    margin: auto;
+}
+
+.footer {
+    font-size: 12pt;
+    text-align: justify;
+}
+
+.icons_header {
+    text-align: left;
+    display: flex;
+}
+
+#icons_header_right {
+    text-align: right;
+}
+
+#formulario {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.336);
+    display: relative;
+    margin: 0 auto;
+    width: 35%;
+    height: 40vh;
+    font-size: 1.2em;
+
+}
+
+#senha,
+#nome,
+#email,
+#telefone {
+    margin: 0 auto;
+    left: 50vh;
+    width: 50%;
+    border-radius: 1em;
+    box-shadow: inset 1px 1px 0px black;
+    margin-left: 28%;
+
+}
+
+#label_nome {
+    text-indent: 15px;
+}
+
+button#cadastrar {
+    background-color: var(--cor2);
+    color: var(--cor4);
+    border: 0px;
+    border-radius: 1.3em;
+    font-size: 1em;
+    margin: auto;
+    padding: 8px;
+    box-shadow: inset -3px -3px 0px black;
+    margin-left: 35%;
+}
+
+button#cadastrar:active {
+    box-shadow: inset 3px 3px 1px black;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuario - Info House</title>
+    <link rel="stylesheet" href="/style/sign_in.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Image/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Image/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Image/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="/HTML/index.html"><img src="/Image/logo_infohouse.png" alt="logo Info House" width="250"></a><br>
+        <div class="icons_header">
+            <i class='bx bx-store'></i>
+            <i class='bx bx-search-alt'></i>
+            <i class='bx bx-cart'></i>
+            <i class='bx bxs-user'></i>
+        </div>
+    </header>
+    <main>
+        <h1>Cadastro de Usuario</h1>
+        <form id="formulario">
+            <label for="nome" id="label_nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="telefone" id="label_telefone">Telefone:</label><br>
+            <input type="tel" name="telefone" id="telefone" required> <br>
+            <label for="email" id="label_email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="senha" id="label_senha">Senha:</label><br>
+            <input type="password" id="senha" name="senha" required><br>
+            <br>
+            <button type="submit" id="cadastrar">Cadastrar</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
