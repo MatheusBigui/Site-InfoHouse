@@ -1,41 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap');
 
 * {
-    margin: 0;
+    margin: auto;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fontPadrao), sans-serif;
     color: var(--cor1);
     box-sizing: border-box;
+    align-items: center;
 }
 
 
 :root {
     --cor0: #3B3C40;
     --cor1: #ffffff;
+    --cor2: #D6261D;
+    --cor3: #000000;
+    --fontPadrao: Arial;
 }
 
 
 body {
-    background-color: var(--cor0);
+    background-image: linear-gradient(to right, var(--cor3), var(--cor0), var(--cor3));
     color: var(--cor1);
 }
 
 #logo {
     padding: 10px;
-    width: 400px;
     text-align: center;
     margin: auto;
+    display: block;
+    width: 50vh;
+    height: auto;
+
 }
 
 main {
     margin: auto;
-
+    min-width: 100%;
 }
+
+
 
 #display_imagens {
     border: 1px solid transparent;
+    width: 100vh;
     padding: 10px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -44,41 +57,49 @@ main {
     width: 250px;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
     border-radius: 20px;
+    margin: 0;
+
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 10%;
-    width: 10%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-}
-
-.container-:hover .overlay {
-    opacity: 1;
-}
-
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.informacoes {
+#text1,
+#text2,
+#text3 {
     font-size: 16pt;
     text-align: center;
     font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.imagem-texto:hover .text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.texto_imagem {
+    font-size: 20pt;
+    font-weight: 600;
+    font-family: var(--fontPadrao);
+    padding-bottom: 2vh;
+
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.informacoes {
+    font-size: 20pt;
+    text-align: center;
+    font-weight: 600;
+    padding: 4vh 0;
+    text-align: center;
 }
 
 #address {
@@ -86,13 +107,10 @@ main {
     font-style: normal;
 }
 
-.icons_header {
-    text-align: left;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.bx {
-    width: 4em;
-    font-size: 2em;
+@media screen and (max-width: 600px) {
+    #display_imagens {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
 }
