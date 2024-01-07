@@ -103,6 +103,10 @@ main {
     text-align: center;
 }
 
+footer>.informacoes {
+    font-size: 14pt;
+}
+
 #address {
     color: var(--cor1);
     font-style: normal;
@@ -113,5 +117,111 @@ main {
         display: flex;
         flex-direction: column;
         width: 80%;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:600px) {
+    #logo {
+        width: 300px;
+    }
+
+    #display_imagens {
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+        padding: 15px;
+        margin: 0;
+
+    }
+
+    .imagens {
+        width: 50vh;
+        height: 60vh;
+        padding: 10;
+        margin-left: 20%;
+        transform: translateX(-10px);
+
+    }
+
+    .texto_imagem {
+        font-size: 18pt;
+    }
+
+    .text1,
+    .text2,
+    .text3 {
+        transform: translateX(30px);
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 700px) {
+    #logo {
+        width: 350px;
+    }
+
+    #display_imagens {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        padding: 15px;
+        margin: 0 50px;
+        justify-content: flex-start;
+    }
+
+    .imagens {
+        width: 50vh;
+        height: 60vh;
+        padding: 0;
+        margin-left: 20%;
+    }
+
+    .texto_imagem {
+        font-size: 18pt;
+    }
+
+    .text1,
+    .text2,
+    .text3 {
+        transform: translateX(40px);
+    }
+}
+
+@media screen and (max-width:800px) and (min-width:700px) and (height > 500px) {
+
+    #display_imagens {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        padding: 0;
+        margin: 0 50px;
+        margin-left: 25%;
+
+    }
+
+    .imagens {
+        width: 30vh;
+        height: 40vh;
+        padding: 0;
+        margin-left: 15%;
+    }
+
+    .informacoes {
+        margin: auto;
+    }
+
+    .text1,
+    .text2,
+    .text3 {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width:900px) {
+    #logo {
+        width: 400px;
+    }
+
+    .imagens {
+        width: 30vh;
     }
 }
